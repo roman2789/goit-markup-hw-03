@@ -20,7 +20,15 @@ body {
   padding-left: 15px;
   width: 1200px;
 }
-
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
 .item {
   list-style: none;
 }
@@ -44,7 +52,6 @@ body {
 .header .container {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
 }
 .header-logo {
   margin-right: 93px;
@@ -72,7 +79,7 @@ body {
 }
 .header-list {
   display: flex;
-  padding-left: 0;
+  align-items: center;
 }
 .header .item:not(:last-child) {
   margin-right: 50px;
@@ -81,8 +88,10 @@ body {
   margin-right: 0;
   padding-left: 0;
   display: flex;
+  align-items: center;
 }
 .header-list .link {
+  display: block;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -92,6 +101,7 @@ body {
 }
 
 .contacts .link {
+  display: block;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -157,7 +167,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 0;
 }
 
 .features .item {
@@ -165,8 +174,6 @@ body {
 }
 
 .features .title {
-  margin-top: 0;
-  margin-bottom: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -175,7 +182,7 @@ body {
 }
 
 .features .descr {
-  margin-bottom: 0;
+  margin-top: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -190,8 +197,6 @@ body {
 }
 
 .services .services-title {
-  margin-top: 0;
-  margin-bottom: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -202,7 +207,6 @@ body {
 .services-list {
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
   margin-top: 50px;
 }
 
@@ -223,7 +227,9 @@ body {
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
   padding-left: 0;
   margin-top: 50px;
 }
@@ -232,7 +238,10 @@ body {
   background-color: var(--primary-white-color);
   width: 270px;
 }
-
+.member-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team .name {
   font-weight: 500;
   font-size: 16px;
@@ -241,6 +250,7 @@ body {
   text-align: center;
 }
 .team .descr {
+  margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -266,12 +276,16 @@ body {
   letter-spacing: 0.03em;
 }
 .address > .link {
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
 .address .footer-link {
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
   font-weight: inherit;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -290,9 +304,10 @@ body {
 }
 
 /* portfolio page */
+
 .projects {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .projects-tabs {
   display: flex;
@@ -304,6 +319,9 @@ body {
 
 .projects-tabs > .item:not(:last-child) {
   margin-right: 8px;
+}
+.tab-item {
+  margin-bottom: 0;
 }
 .projects-button {
   width: 100%;
@@ -336,7 +354,7 @@ body {
   margin-top: 50px;
 }
 
-.projects .item:nth-child(-n + 6) {
+.projects .project-item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
